@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hexflux"
+version = "1.0.0"
+description = "A color utility CLI: parse, convert, shade/tint/ramp, and WCAG contrast"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Conedope"}]
+keywords = ["color", "wcag", "contrast", "hsl", "hsv", "cli"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+hexflux = "hexflux.cli:main"
+
+[tool.setuptools]
+packages = ["hexflux"]
